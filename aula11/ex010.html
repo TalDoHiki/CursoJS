@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSP?</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Fine System</h1>
+    Car speed: <input type="number" name="txtvel" id="txtvel">Km/h
+    <input type="button" value="Verify" onclick="calc()">
+    <div id="spdr"></div>
+
+    <h1>Housing System</h1>
+    Where state do you live? <input type="text" name="txtpl" id="txtpl">
+    <input type="button" value="Verify" onclick="sch()">
+    <div id="schr"></div>
+
+    <script>
+        function calc() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var spdr = window.document.querySelector('div#spdr')
+            var vel = Number(txtv.value)
+            spdr.innerHTML = `<p>Your currently speed is <b>${vel}Km/h!</b></p>`
+            if (vel > 60) {
+                spdr.innerHTML += `<p>You're <b>FINED</b> for speeding!</p>`
+            }
+            spdr.innerHTML += `<p>Always drive wearing a seat belt!</p>`
+        }
+
+        function sch() {
+            var txts = window.document.querySelector('input#txtpl')
+            var schr = window.document.querySelector('div#schr')
+            var pl = Text(txtp.value)
+            schr.innerHTML = `<p>You're living at <b>${pl}</b></p>!`
+            }
+    </script>
+</body>
+</html>
