@@ -13,14 +13,25 @@
     </header>
     <section>
         <div>
-            Testing...
+            <p>Birthday Date:
+                <input type="number" name="txty" id="texty" min="0">
+            </p>
+            <p>Sex:
+                <input type="radio" name="radsex" id="mal" checked>
+                <label for="mal">Male</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Femalae</label>
+            </p>
+            <p>
+                <input type="button" value="Verify" onclick="verify()">
+            </p>
         </div>
-        <div>
-
+        <div id="res">
+            Fill the data to get the result!
         </div>
     </section>
     <footer>
-        <p> FLPhones</p>
+        <p>&copy; FLPhones</p>
     </footer>
     <script src="script.js"></script>
 </body>
