@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise Model</title>
+    <title>Multiplication Table</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Title</h1>
+        <h1>Multiplication Table</h1>
     </header>
     <section>
-        <div>
-            Testing...
+        <div id="data">
+            <p>Number: <input type="number" name="txtn" id="txtn"> <input type="button" value="Generate" onclick="generate()"></p>
         </div>
-        <div>
-
+        <div id="res">
+            <select name="table" id="seltab" size="10">
+                <option>Type a number above</option>
+            </select>
         </div>
     </section>
     <footer>
-        <p> FLPhones</p>
+        <p>&copy; FLPhones</p>
     </footer>
     <script src="script.js"></script>
 </body>
